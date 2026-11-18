@@ -60,6 +60,118 @@ Anna;Verdi;19
 			mentre le righe successive contengono i dati delle persone.
 			Il punto e virgola viene utilizzato come delimitatore.
 		</p>
+		<h2>Il formato XML</h2>
+
+		<p>
+			XML, ovvero eXtensible Markup Language, è un linguaggio
+			di marcatura utilizzato per memorizzare e scambiare dati
+	in modo strutturato. Permette di organizzare le informazioni
+			utilizzando dei tag, cioè delle etichette che identificano
+			il significato dei dati.
+		</p>
+
+		<h3>Caratteristiche e peculiarità</h3>
+
+		<p>
+			XML permette di creare tag personalizzati, rendendo possibile
+			l'organizzazione dei dati in strutture gerarchiche.
+			Ogni elemento può contenere altri elementi, creando una
+			struttura ad albero.
+		</p>
+
+		<p>
+			È un formato molto leggibile sia dalle persone sia dai computer
+			e viene utilizzato soprattutto nello scambio di informazioni
+			tra applicazioni differenti. Rispetto al CSV è più dettagliato,
+			ma generalmente occupa più spazio.
+		</p>
+
+		<h3>Esempio di codice XML</h3>
+
+		<pre>
+<?xml version="1.0" encoding="UTF-8"?>
+<studenti>
+    <studente>
+        <nome>Mario</nome>
+        <cognome>Rossi</cognome>
+        <eta>18</eta>
+    </studente>
+    <studente>
+        <nome>Luca</nome>
+        <cognome>Bianchi</cognome>
+        <eta>20</eta>
+    </studente>
+</studenti>
+		</pre>
+
+		<p>
+			In questo esempio il tag principale è &lt;studenti&gt;,
+			che contiene più elementi &lt;studente&gt;.
+			Ogni studente possiede tre informazioni: nome, cognome ed età.
+		</p>
+
+
+		<h2>Il formato JSON</h2>
+
+		<p>
+			JSON, ovvero JavaScript Object Notation, è un formato
+			testuale utilizzato per rappresentare e scambiare dati.
+			È molto diffuso nello sviluppo di applicazioni web
+			e nella comunicazione tra client e server.
+		</p>
+
+		<h3>Caratteristiche e peculiarità</h3>
+
+		<p>
+			JSON organizza le informazioni attraverso coppie
+			chiave-valore. Le chiavi identificano i dati, mentre
+			i valori rappresentano le informazioni associate.
+		</p>
+
+		<p>
+			Utilizza principalmente due strutture:
+		</p>
+
+		<ul>
+			<li><strong>Oggetti:</strong> sono racchiusi tra parentesi
+			graffe { } e contengono coppie chiave-valore;</li>
+
+			<li><strong>Array:</strong> sono racchiusi tra parentesi
+			quadre [ ] e permettono di contenere più valori.</li>
+		</ul>
+
+		<p>
+			JSON è leggero, semplice da leggere e facilmente
+			interpretato da molti linguaggi di programmazione.
+			Rispetto a XML utilizza una sintassi più compatta
+			e generalmente richiede meno spazio.
+		</p>
+
+		<h3>Esempio di codice JSON</h3>
+
+		<pre>
+{
+    "studenti": [
+        {
+            "nome": "Mario",
+            "cognome": "Rossi",
+            "eta": 18
+        },
+        {
+            "nome": "Luca",
+            "cognome": "Bianchi",
+            "eta": 20
+        }
+    ]
+}
+		</pre>
+
+		<p>
+			In questo esempio abbiamo un oggetto chiamato studenti
+			che contiene un array con due studenti.
+			Ogni studente è rappresentato da un oggetto con tre
+			coppie chiave-valore.
+		</p>
 
 	</body>
 </html>
